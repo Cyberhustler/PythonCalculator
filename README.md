@@ -6,45 +6,40 @@ Ryan and Yashens Calculator with mod verification!
     that users try to mess calculators with! TRY IT!
 # Simple calculator
 
-#Function adder
-def adder(x, y):
-   return x + y
+def add(x, y):
+    return x + y
 
-# to subtract two numbers
+
+# Function subtract
 def minus(x, y):
-   return x - y
+    return x - y
 
-# this one will divide the two
+
+# Function divide
 def divide(x, y):
-   return x / y
+    return x / y
 
-# this function multi
-def multu(x, y):
-   return x * y
 
-print("Select Yashens Choices fucker.")
-print("1.adder")
-print("2.minus")
-print("3.multu")
-print("4.divide")
+# Function multiply
+def multiply(x, y):
+    return x * y
 
-# Please enter input
-RyansDevice = input("Enter Your side(4/3/2/1): ")
 
+# Variable First Number
 iNum1 = float(input("Enter your 1st Number: "))
-iNum2 = float(input("Enter your 2st Number: "))
+# Operator Input
+simple_calculator = input("Enter Operator: ")
+# Variable Second Number
+iNum2 = float(input("Enter your 2nd Number: "))
 
-if RyansDevice == '1':
-    print(iNum1, "+", iNum2, "=", adder(iNum1, iNum2))
-elif RyansDevice == '2':
+if simple_calculator == '+':
+    print(iNum1, "+", iNum2, "=", add(iNum1, iNum2))
+elif simple_calculator == '-':
     print(iNum1, "-", iNum2, "=", minus(iNum1, iNum2))
-elif RyansDevice == '3':
-    print(iNum1, "*", iNum2, "=", multu(iNum1, iNum2))
-elif RyansDevice == '4':
-    if iNum2 == 0 :
-        print ("Its not possible to divide by 0 : Yashen Fixed it Laws!")
+elif simple_calculator == '*':
+    print(iNum1, "*", iNum2, "=", multiply(iNum1, iNum2))
+elif simple_calculator == '/':
+    if iNum2 == 0:
+        print("Cannot divide by error.")
     else:
-        print(iNum1, "*", iNum2, "=", divide(iNum1, iNum2))
-
-else:
-        print("Invalid input")
+        print(iNum1 / iNum2)
