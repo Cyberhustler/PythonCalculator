@@ -19,8 +19,8 @@ def multu(x, y):
 print("Select Yashens Choices fucker.")
 print("1.adder")
 print("2.minus")
-print("3.multu")
-print("4.divide")
+print("3.divide")
+print("4.multu")
 
 # Please enter input
 RyansDevice = input("Enter Your side(4/3/2/1): ")
