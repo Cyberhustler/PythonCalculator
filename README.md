@@ -1,4 +1,4 @@
-# RyansCalculator
+# PythonCalculator
 Ryan and Yashens Calculator with mod verification!
  - version 0.0.0.1
   _ Success atlast...(DEXTER VOICE)
